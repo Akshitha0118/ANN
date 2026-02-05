@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\A3MAX SOFTWARE TECH\A VS CODE\CHURN MODELING- TF\Churn_Modelling.csv")
+df = pd.read_csv("Churn_Modelling.csv")
 
 # Data Preprocessing
 X = df.iloc[:, 3:-1].values
@@ -76,3 +76,4 @@ if st.button("Predict"):
     cm = confusion_matrix(y_test, y_pred)
     st.write("Confusion Matrix:")
     st.write(cm)
+
